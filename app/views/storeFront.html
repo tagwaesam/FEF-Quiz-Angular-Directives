@@ -1,0 +1,25 @@
+<p>This is the storeFront view.</p>
+<h1 id="storeHeading">{{lego.name}}</h1>
+<p id="brickColors">Available colors={{lego.brickColors.length}}<p>
+<ul id="colorList" ng-repeat="(key, sizes) in lego.bricks">
+  <li id="color-{{key}}" >  {{key}}
+    <div ng-repeat="(key1, value) in sizes">
+      <div class="brick-{{key1}}" ng-Class="{'low-stock': value.quantity<10}">Size:{{key1}}
+        <div>Quantity:{{value.quantity}}
+          <span  class= "coming-soon" ng-if="value.quantity<5">
+          more is on the way
+          </span>
+        </div>
+        <div>Price:{{value.price}}</div>
+
+        <button class="buyButton" type="button" ng-click="value.buy()">Buy</button>
+        <button class="returnButton" type="button" ng-click="value.return()">Return</button>
+        <br>
+        <br>
+      </div>
+    </div>
+
+
+  </li>
+
+</ul>

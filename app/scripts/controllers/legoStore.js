@@ -8,44 +8,129 @@ angular.module('directivesQuizApp')
       Red: {
         '1x1': {
           quantity: 13,
-          price: 0.01
+          price: 0.01,
+          buy:function(){
+            this.quantity--;
+
+          },
+          return:function(){
+
+            this.quantity++;
+
+          }
+
         },
         '2x2': {
           quantity: 48,
-          price: 0.03
+          price: 0.03,
+          buy:function(){
+            this.quantity--;
+
+          },
+          return:function(){
+
+            this.quantity++;
+
+          }
         },
         '2x6': {
           quantity: 9,
-          price: 0.05
+          price: 0.05,
+          buy:function(){
+            this.quantity--;
+
+          },
+          return:function(){
+
+            this.quantity++;
+
+          }
         },
         '36x12': {
           quantity: 24,
-          price: 2.99
+          price: 2.99,
+          buy:function(){
+            this.quantity--;
+
+          },
+          return:function(){
+
+            this.quantity++;
+
+          }
         }
       },
       Blue: {
         '2x2': {
           quantity: 3,
-          price: 0.02
+          price: 0.02,
+          buy:function(){
+            this.quantity--;
+
+          },
+          return:function(){
+
+            this.quantity++;
+
+          }
         },
         '2x4': {
           quantity: 19,
-          price: 0.04
+          price: 0.04,
+          buy:function(){
+            this.quantity--;
+
+          },
+          return:function(){
+
+            this.quantity++;
+
+          }
         }
       },
       Green: {
         '1x8': {
           quantity: 139,
-          price: 0.08
+          price: 0.08,
+          buy:function(){
+            this.quantity--;
+
+          },
+          return:function(){
+
+            this.quantity++;
+
+          }
         },
         '2x4': {
           quantity: 30,
-          price: 0.04
+          price: 0.04,
+          buy:function(){
+            this.quantity--;
+
+          },
+          return:function(){
+
+            this.quantity++;
+
+          }
         },
         '2x8': {
           quantity: 11,
-          price: 0.08
+          price: 0.08,
+          buy:function(){
+            this.quantity--;
+
+          },
+          return:function(){
+
+            this.quantity++;
+
+          }
         }
       }
+
     };
+
+
   });
